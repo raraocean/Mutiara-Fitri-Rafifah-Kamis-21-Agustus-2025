@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register dengan Tabel</title>
+		<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Register</h1>
+    <div class="form-container">
+        <form id="registerForm">
+            <input type="text" id="nama" placeholder="Masukan Nama" required/>
+            <input type="email" id="email" placeholder="Masukan Email" required/> 
+            <input type="password" id="password" placeholder="Masukan Password" required/>
+				<input type="date" id="tanggal" required/>
+            
+            <label>Jenis Kelamin :</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" id="Laki-laki" value="Laki-laki" required/>
+                <label for="Laki-laki">Laki-laki</label>
+                <input type="radio" name="gender" id="Wanita" value="Wanita"/>
+                <label for="Wanita">Wanita</label>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="setuju" required />
+                <label for="setuju">Anda menyetujui Syarat dan Ketentuan</label>
+            </div>
+            
+            <button type="submit">Buat Akun</button>
+				
+        </form>
+			<p><a href="login.html">Login Disini</a></p>
+    </div>
+
+    <!-- TABLE UNTUK MENAMPILKAN DATA -->
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Tanggal Lahir</th>
+                <th>Jenis Kelamin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data akan otomatis muncul di sini -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+        
+</body>
+</html>
